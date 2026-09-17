@@ -45,7 +45,7 @@ class _FlashPage extends State<FlashPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-
+        title: Center(child: Text("Flash Page")),
         backgroundColor: Colors.amberAccent,
 
       ),
@@ -54,7 +54,13 @@ class _FlashPage extends State<FlashPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text("flash page", style: TextStyle(fontSize: 30),)
+            Text("flash page", style: TextStyle(fontSize: 30),),
+            SizedBox(height: 400,),
+            ElevatedButton(onPressed: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)
+              => MyHomePage()));
+            }, child: Text("->", style:
+            TextStyle(fontSize: 40, fontWeight: FontWeight.bold,)))
 
 
           ],

@@ -20,6 +20,7 @@ class _LoginPage extends State<Loginpage>{
       return Scaffold(
 
         appBar: AppBar(
+          title: Text("Login Page"),
           backgroundColor: Colors.cyanAccent,
         ),
         body: Center(
